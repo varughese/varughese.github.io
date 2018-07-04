@@ -22,14 +22,21 @@ h1 {
 
 .info .links {
 	display: flex;
-	justify-content: space-between
+	justify-content: space-between;
+	margin-top: 25px;
 }
 
 .info .links .link-icon a {
 	color: black;
+	display: flex;
+	align-items: center;
 }
 .info .links .link-icon a:hover {
 	text-decoration: none;
+}
+
+.info .links .link-icon i {
+	font-size: 16pt;
 }
 
 .info .links .link-icon a:hover i {
@@ -38,12 +45,12 @@ h1 {
 
 .info .links .link-icon a:hover span {
 	color: #004784;
-	text-decoration: underline;
+	/* text-decoration: underline; */
 }
 
 
 .info .links .link-icon span {
-	margin-left: 4px;
+	margin-left: 5px;
 }
 
 #quote-line {
