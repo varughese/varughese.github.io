@@ -66,3 +66,26 @@ h1 {
 	font-style: italic;
 	color: #757575;
 }
+
+@media screen and (max-width: 700px) {
+	.info .links .link-icon span {
+		display: none;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	.links {
+		width: 60%;
+		padding: 10px;
+	}
+
+	body {
+		padding: 0px 12px;
+	}
+
+	.main-block {
+		margin-top: 15px;
+	}
+}
