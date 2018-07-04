@@ -1,0 +1,61 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	font-size: 14pt;
+	justify-content: center;
+	border-top: 5px solid #004784;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family : 'Markazi Text', serif;
+}
+
+h1 {
+	font-size: 5rem;
+	margin-bottom: 3px;
+}
+
+.main-block {
+	margin-top: 40px;
+	width: 600px;
+}
+
+.info .links {
+	display: flex;
+	justify-content: space-between
+}
+
+.info .links .link-icon a {
+	color: black;
+}
+.info .links .link-icon a:hover {
+	text-decoration: none;
+}
+
+.info .links .link-icon a:hover i {
+	color: #004784;
+}
+
+.info .links .link-icon a:hover span {
+	color: #004784;
+	text-decoration: underline;
+}
+
+
+.info .links .link-icon span {
+	margin-left: 4px;
+}
+
+#quote-line {
+	height: 1px;
+	margin: 25px auto;
+	margin-bottom: 10px;
+	background: #d8d8d8;
+	display: block;
+}
+
+#quote {
+	font-size: 10pt;
+	font-style: italic;
+	color: #757575;
+}
