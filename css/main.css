@@ -41,16 +41,22 @@ h1 {
 
 .info .links .link-icon a:hover i {
 	color: #004784;
+	cursor: pointer;
 }
 
 .info .links .link-icon a:hover span {
 	color: #004784;
+	cursor: pointer;
 	/* text-decoration: underline; */
 }
 
 
 .info .links .link-icon span {
 	margin-left: 5px;
+}
+
+a:hover {
+	cursor: pointer;
 }
 
 #quote-line {
@@ -73,7 +79,7 @@ h1 {
 	}
 
 	h1 {
-		font-size: 3rem;
+		font-size: 3.5rem;
 	}
 
 	.links {

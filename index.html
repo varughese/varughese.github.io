@@ -41,7 +41,7 @@
 			</div>
 			<div class="links">
 				<div class="link-icon">
-					<a href="projects.html">
+					<a onclick="changeState('projects')">
 						<i class="fas fa-file-code"></i>
 						<span>Projects</span>
 					</a>
@@ -65,7 +65,7 @@
 					</a>
 				</div>
 				<div class="link-icon">
-					<a href="about.html">
+					<a onclick="changeState('about')">
 						<i class="fas fa-address-card"></i>
 						<span>About</span>
 					</a>
@@ -78,19 +78,36 @@
 		</div>
 		<!-- END OF TEMPLATE -->
 	</div>
-	
+
 	<script id="projects-template" type="text/template">
-		<p>projects</p>
+		<div class="header">
+			<h1>Projects</h1>
+		</div>
+		<div class="info">
+			<div>
+				<p>Website Under Development... Check back soon!</p>
+			</div>
+		</div>
+		<div class="info">
+			<a onclick="changeState('home')">Back to Home</a>
+		</div>
 	</script>
 
 	<script id="about-template" type="text/template">
-		<p>about me</p>
+		<div class="header">
+			<h1>About Me</h1>
+		</div>
+		<div class="info">
+			<div>
+				<p>Website Under Development... Check back soon!</p>
+			</div>
+		</div>
+		<div class="info">
+			<a onclick="changeState('home')">Back to Home</a>
+		</div>
 	</script>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-	<script type="text/javascript">
-	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="app.js"></script>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
