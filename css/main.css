@@ -3,7 +3,7 @@ body {
 	display: flex;
 	font-size: 14pt;
 	justify-content: center;
-	border-top: 5px solid #004784;
+	border-top: 8px solid #004784;
 }
 
 h1, h2, h3, h4, h5, h6 {

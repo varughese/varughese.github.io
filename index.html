@@ -29,7 +29,7 @@
 </head>
 
 <body>
-	<div class="main-block">
+	<div id="root" class="main-block" current-state="home">
 		<div class="header">
 			<h1>Mathew Varughese</h1>
 		</div>
@@ -76,20 +76,22 @@
 				<div id="quote"></div>
 			</div>
 		</div>
+		<!-- END OF TEMPLATE -->
 	</div>
+	
+	<script id="projects-template" type="text/template">
+		<p>projects</p>
+	</script>
+
+	<script id="about-template" type="text/template">
+		<p>about me</p>
+	</script>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
 	<script type="text/javascript">
-		var quotes = [
-			"\"I cannot remember the books Ive read any more that than the meals I have eaten; even so, they have made me\"", 
-			'"Too much of anything becomes its opposite"', 
-			'"Luck is what happens when preparation meets opportunity"', 
-			'"Success isn\'t about being the best. It\'s about always getting better."'
-		];
-
-		document.getElementById('quote').innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
 	</script>
+	<script src="app.js"></script>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	
