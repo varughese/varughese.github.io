@@ -6,7 +6,11 @@ body {
 	border-top: 8px solid #004784;
 }
 
-h1, h2, h3, h4, h5, h6 {
+body.blue-border {
+	border-top-color: #004784;
+}
+
+h1, h2, h3, h4, h6 {
 	font-family : 'Markazi Text', serif;
 }
 
@@ -19,6 +23,14 @@ h1 {
 	margin-top: 40px;
 	width: 600px;
 }
+.main-block.wide {
+	width: 80%
+}
+.main-block.wide .header {
+	width: 100%;
+	text-align: center;
+}
+
 
 .info .links {
 	display: flex;
@@ -88,4 +100,99 @@ h1 {
 	.main-block {
 		margin-top: 15px;
 	}
+}
+
+.card-holder {
+}
+.portfolio-card {
+	box-shadow: 3px 3px 6px #dfdfdfad;
+	height: 250px;
+	border: 1px solid #ddd;
+	margin-bottom: 30px;
+}
+
+.portfolio-card.screen-pic {
+	height: 390px;
+}
+
+.portfolio-card.screen-pic .aspect{
+	padding-bottom: 66%;
+}
+.portfolio-card.side-card {
+	height: 110px;
+	display: flex;
+}
+.portfolio-card.side-card .aspect{
+	padding: 0;
+	height: 100%;
+	width: 20%;
+}
+.portfolio-card.side-card .portfolio-card-body {
+	width: 80%;
+}
+
+
+
+.card-text {
+	font-size: 10pt;
+	margin-top: 4px;
+}
+
+.portfolio-card .portfolio-card-title {
+	font-size: 1.15rem;
+	margin-top: 8px;
+	font-weight: 600;
+}
+.portfolio-card-body {
+	padding-top: 0rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.portfolio-card:hover {
+	box-shadow: 3px 3px 6px #bfbfbfad;
+	cursor: pointer;
+}
+
+.shuffle-sizer { 
+	visibility: hidden;
+	opacity: none; }
+
+.aspect {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 30%;
+	overflow: hidden;
+}
+
+.aspect img {
+	height: 100%;
+}
+
+.aspect__wide {
+	padding-bottom: 30%;
+}
+
+.aspect__inner {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.aspect--16x9 {
+	padding-bottom: 56.25%;
+}
+
+.aspect--9x80 {
+	padding-bottom: calc(112.5% + 8px);
+}
+
+.aspect--32x9 {
+	padding-bottom: calc(28.125% - 3px);
 }
