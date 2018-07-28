@@ -433,7 +433,7 @@
     HIDDEN: 0.001
   };
 
-  var element = document.body || document.documentElement;
+  var element = document.body.querySelector('.main-block') || document.body || document.documentElement;
   var e = document.createElement('div');
   e.style.cssText = 'width:10px;padding:2px;box-sizing:border-box;';
   element.appendChild(e);
@@ -462,7 +462,7 @@
 
     // Support IE<=11 and W3C spec.
     if (!ret && style === 'width') {
-      // value += getNumber(styles.paddingLeft) + getNumber(styles.paddingRight) + getNumber(styles.borderLeftWidth) + getNumber(styles.borderRightWidth);
+      value += getNumber(styles.paddingLeft) + getNumber(styles.paddingRight) + getNumber(styles.borderLeftWidth) + getNumber(styles.borderRightWidth);
     } else if (!ret && style === 'height') {
       value += getNumber(styles.paddingTop) + getNumber(styles.paddingBottom) + getNumber(styles.borderTopWidth) + getNumber(styles.borderBottomWidth);
     }
