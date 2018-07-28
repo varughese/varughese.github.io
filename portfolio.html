@@ -12,153 +12,215 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
 	    crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
-	<title>Mat Varughese | Projects</title>
+	<title>Mat | Projects</title>
 </head>
 
-<body>
-	<div class="main-block wide">
+<body class="portfolio">
+	<div class="main-block container-fluid">
 		<div class="header">
-			<h1>Projects</h1>
+			<h1>Portfolio</h1>
 		</div>
-		<div>
-			<a href="index.html">Back to Home</a>
+		<div class="filter-control-container row">
+			<div class="col-md-12">
+				<div class="row justify-content-md-center">
+					<div class="filter-group col-md-auto col-sm-12">
+						<div class="filter-group-label">Type</div>
+						<div class="btn-group btn-group-toggle" id="shuffle-filteron-type" role="group">
+							<label class="btn btn-outline-danger btn-sm">
+								<input type="checkbox" value="personal">Personal
+							</label>
+							<label class="btn btn-outline-danger btn-sm">
+								<input type="checkbox" value="work">Work
+							</label>
+							<label class="btn btn-outline-danger btn-sm">
+								<input type="checkbox" value="course">Course
+							</label>
+							<label class="btn btn-outline-danger btn-sm">
+								<input type="checkbox" value="award">Award
+							</label>
+						</div>
+					</div>
+					<div class="filter-group col-md-auto col-sm-12">
+						<div class="filter-group-label ">Languages</div>
+						<div class="btn-group btn-group-toggle" data-toggle="buttons" role="group" id="shuffle-filteron-lang">
+							<label class="btn btn-outline-primary btn-sm">
+								<input type="checkbox" value="js">JavaScript
+							</label>
+							<label class="btn btn-outline-primary btn-sm">
+								<input type="checkbox" value="java">Java
+							</label>
+							<label class="btn btn-outline-primary btn-sm">
+								<input type="checkbox" value="c">C
+							</label>
+							<label class="btn btn-outline-primary btn-sm">
+								<input type="checkbox" value="python">Python
+							</label>
+							<label class="btn btn-outline-primary btn-sm">
+								<input type="checkbox" value="scala">Scala
+							</label>
+							<label class="btn btn-outline-primary btn-sm">
+								<input type="checkbox" value="asm">Assembly
+							</label>
+						</div>
+					</div>
+					<div class="filter-group col-md-auto">
+						<div class="filter-group-label">Sort By</div>
+						<div class="btn-group btn-group-toggle" data-toggle="buttons" role="group" id="sort-options">
+							<label class="btn btn-outline-dark btn-sm active">
+								<input type="radio" checked value="default">Default
+							</label>
+							<label class="btn btn-outline-dark btn-sm">
+								<input type="radio" value="type">Type
+							</label>
+							<label class="btn btn-outline-dark btn-sm">
+								<input type="radio" value="date">Date
+							</label>
+							<label class="btn btn-outline-dark btn-sm">
+								<input type="radio" value="title">Title
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="card-holder row">
-			<div class="card-container col-lg-4 col-sm-6 col-xl-3">
-				<div class="portfolio-card">
-					<div class="aspect aspect__wide">
-						<div class="aspect__inner">
-							<img class="" src="images/megabus.png" alt="Card image cap">
+		<div class="shuffle-container-holder">
+			<div class="card-holder row">
+				<div class="card-container col-lg-4 col-sm-6 col-xl-3" data-type="personal" data-langs="scala,asm">
+					<div class="portfolio-card">
+						<div class="aspect aspect__wide">
+							<div class="aspect__inner">
+								<img class="" src="images/megabus.png" alt="Card image cap">
+							</div>
 						</div>
-					</div>
-					<div class="portfolio-card-body">
-						<h5 class="portfolio-card-title">Megabus Ticket Finder</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<div class="tags">
-							<div>
-								<span class="badge badge-primary">ReactJS</span>
-								<span class="badge badge-primary">NodeJS</span>
-								<span class="badge badge-primary">Firebase</span>
+						<div class="portfolio-card-body">
+							<h5 class="portfolio-card-title">Megabus Ticket Finder</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<div class="tags">
+								<div>
+									<span class="badge badge-primary">ReactJS</span>
+									<span class="badge badge-primary">NodeJS</span>
+									<span class="badge badge-primary">Firebase</span>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="card-container col-lg-4 col-sm-6 col-xl-3">
-				<div class="portfolio-card">
-					<div class="aspect aspect__wide">
-						<div class="aspect__inner">
-							<img class="" src="images/deriver.png" alt="Card image cap">
+				<div class="card-container col-lg-4 col-sm-6 col-xl-3">
+					<div class="portfolio-card">
+						<div class="aspect aspect__wide">
+							<div class="aspect__inner">
+								<img class="" src="images/deriver.png" alt="Card image cap">
+							</div>
 						</div>
-					</div>
-					<div class="portfolio-card-body">
-						<h5 class="portfolio-card-title">Deriver</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<div class="tags">
-							<div>
-								<span class="badge badge-primary">MathJax</span>
-								<span class="badge badge-primary">HTML5 Canvas</span>
+						<div class="portfolio-card-body">
+							<h5 class="portfolio-card-title">Deriver</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<div class="tags">
+								<div>
+									<span class="badge badge-primary">MathJax</span>
+									<span class="badge badge-primary">HTML5 Canvas</span>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="card-container col-lg-4 col-sm-6 col-xl-3">
-				<div class="portfolio-card">
-					<div class="aspect aspect__wide">
-						<div class="aspect__inner">
-							<img class="" src="images/neurolog.png" alt="Card image cap">
+				<div class="card-container col-lg-4 col-sm-6 col-xl-3">
+					<div class="portfolio-card">
+						<div class="aspect aspect__wide">
+							<div class="aspect__inner">
+								<img class="" src="images/neurolog.png" alt="Card image cap">
+							</div>
 						</div>
-					</div>
-					<div class="portfolio-card-body">
-						<h5 class="portfolio-card-title">NeuroLog</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<div class="tags">
-							<div>
-								<span class="badge badge-primary">MathJax</span>
-								<span class="badge badge-primary">HTML5 Canvas</span>
+						<div class="portfolio-card-body">
+							<h5 class="portfolio-card-title">NeuroLog</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<div class="tags">
+								<div>
+									<span class="badge badge-primary">MathJax</span>
+									<span class="badge badge-primary">HTML5 Canvas</span>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="card-container col-lg-4 col-sm-6 col-xl-3">
-				<div class="portfolio-card screen-pic">
-					<div class="aspect aspect__wide">
-						<div class="aspect__inner">
-							<img class="" src="images/moveordie.png" alt="Card image cap">
+				<div class="card-container col-lg-4 col-sm-6 col-xl-3">
+					<div class="portfolio-card screen-pic">
+						<div class="aspect aspect__wide">
+							<div class="aspect__inner">
+								<img class="" src="images/moveordie.png" alt="Card image cap">
+							</div>
 						</div>
-					</div>
-					<div class="portfolio-card-body">
-						<h5 class="portfolio-card-title">Move Or Die</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<div class="tags">
-							<div>
-								<span class="badge badge-primary">MathJax</span>
-								<span class="badge badge-primary">HTML5 Canvas</span>
+						<div class="portfolio-card-body">
+							<h5 class="portfolio-card-title">Move Or Die</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<div class="tags">
+								<div>
+									<span class="badge badge-primary">MathJax</span>
+									<span class="badge badge-primary">HTML5 Canvas</span>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="card-container col-lg-4 col-sm-6 col-xl-3">
-				<div class="portfolio-card">
-					<div class="aspect aspect__wide">
-						<div class="aspect__inner">
-							<img class="" src="images/moveordie.png" alt="Card image cap">
+				<div class="card-container col-lg-4 col-sm-6 col-xl-3">
+					<div class="portfolio-card">
+						<div class="aspect aspect__wide">
+							<div class="aspect__inner">
+								<img class="" src="images/moveordie.png" alt="Card image cap">
+							</div>
 						</div>
-					</div>
-					<div class="portfolio-card-body">
-						<h5 class="portfolio-card-title">Paper</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<div class="tags">
-							<div>
-								<span class="badge badge-primary">MathJax</span>
-								<span class="badge badge-primary">HTML5 Canvas</span>
+						<div class="portfolio-card-body">
+							<h5 class="portfolio-card-title">Paper</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<div class="tags">
+								<div>
+									<span class="badge badge-primary">MathJax</span>
+									<span class="badge badge-primary">HTML5 Canvas</span>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="card-container col-lg-4 col-sm-6 col-xl-6">
-				<div class="portfolio-card side-card">
-					<div class="aspect">
-						<div class="aspect__inner">
-							<i class="fas fa-calculator"></i>
+				<div class="card-container col-lg-6 col-sm-12 col-xl-6">
+					<div class="portfolio-card side-card">
+						<div class="aspect">
+							<div class="aspect__inner">
+								<i class="fas fa-calculator"></i>
+							</div>
 						</div>
-					</div>
-					<div class="portfolio-card-body">
-						<h5 class="portfolio-card-title">Math Paper</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<div class="tags">
-							<div>
-								<span class="badge badge-primary">MathJax</span>
-								<span class="badge badge-primary">HTML5 Canvas</span>
+						<div class="portfolio-card-body">
+							<h5 class="portfolio-card-title">Math Paper</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<div class="tags">
+								<div>
+									<span class="badge badge-primary">MathJax</span>
+									<span class="badge badge-primary">HTML5 Canvas</span>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="card-container col-lg-4 col-sm-6 col-xl-6">
-				<div class="portfolio-card side-card">
-					<div class="aspect">
-						<div class="aspect__inner">
-							<i class="fas fa-calculator"></i>
+				<div class="card-container col-lg-6 col-sm-8 col-xl-6">
+					<div class="portfolio-card side-card">
+						<div class="aspect">
+							<div class="aspect__inner">
+								<i class="fas fa-calculator"></i>
+							</div>
 						</div>
-					</div>
-					<div class="portfolio-card-body">
-						<h5 class="portfolio-card-title">CS Award</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<div class="tags">
-							<div>
-								<span class="badge badge-primary">MathJax</span>
-								<span class="badge badge-primary">HTML5 Canvas</span>
+						<div class="portfolio-card-body">
+							<h5 class="portfolio-card-title">CS Award</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<div class="tags">
+								<div>
+									<span class="badge badge-primary">MathJax</span>
+									<span class="badge badge-primary">HTML5 Canvas</span>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="col-1 shuffle-sizer"></div>
 			</div>
-			<div class="col-1 shuffle-sizer"></div>
 		</div>
 		<!-- END OF CONTAINER-->
 	</div>
