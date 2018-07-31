@@ -135,12 +135,12 @@ html, body.portfolio {
 	height: 110px;
 	display: flex;
 }
-.portfolio-card.side-card .aspect{
+.portfolio-card.side-card.side-card-img .aspect {
 	padding: 0;
 	height: 100%;
 	width: 20%;
 }
-.portfolio-card.side-card .portfolio-card-body {
+.portfolio-card.side-card-img .portfolio-card-body {
 	width: 80%;
 }
 
@@ -149,6 +149,9 @@ html, body.portfolio {
 .card-text {
 	font-size: 10pt;
 	margin-top: 4px;
+}
+.card-text.smaller-text {
+	font-size: 9pt;
 }
 
 .portfolio-card .portfolio-card-title {
@@ -182,6 +185,14 @@ html, body.portfolio {
 
 .aspect img {
 	height: 100%;
+}
+
+.aspect img.full-width {
+	width: 100%;
+}
+
+.aspect.white-bg-pic {
+	border-bottom: 1px solid #ddd;
 }
 
 .aspect__wide {
@@ -250,4 +261,12 @@ html, body.portfolio {
 	padding: 30px;
 	overflow-x: hidden;
 	overflow-y: scroll;
+}
+
+.tags {
+	font-size: smaller;
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	right: 15px;
 }
