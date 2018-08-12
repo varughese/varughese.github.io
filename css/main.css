@@ -296,3 +296,19 @@ html, body.portfolio {
 	top: 10px;
 	font-size: xx-large;
 }
+
+.portfolio-card.card-award {
+	border-left: 8px solid #ffc107;
+}
+
+.portfolio-card.work-card.jimg {
+	border-top: 8px solid #5d1c72;
+}
+.portfolio-card.work-card.jpmc {
+	border-top: 8px solid #004085;
+}
+
+.portfolio-card.work-card .portfolio-card-body{
+	padding-top: 6px;
+}
+
