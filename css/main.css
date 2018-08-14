@@ -302,13 +302,21 @@ html, body.portfolio {
 }
 
 .portfolio-card.work-card.jimg {
-	border-top: 8px solid #5d1c72;
+	border-top: 8px solid #6610f2;
 }
 .portfolio-card.work-card.jpmc {
-	border-top: 8px solid #004085;
+	border-top: 8px solid #117ACA;
 }
 
 .portfolio-card.work-card .portfolio-card-body{
 	padding-top: 6px;
 }
 
+.portfolio-card .side-card-logo img {
+	width: 100%;
+}
+
+.vp-gold-card {
+	background: #ffcd38;
+	border-color: #eca62a;
+}
