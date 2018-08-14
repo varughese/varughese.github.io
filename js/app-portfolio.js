@@ -125,6 +125,10 @@ Portfolio.prototype._handleSortChange = function (evt) {
 		return el.getAttribute("data-type");
 	}
 
+	function sortByTitle(el) {
+		return el.querySelector(".portfolio-card-title").innerHTML;
+	}
+
 	var optsHash = {
 		date: {
 			reverse: true,
@@ -132,6 +136,9 @@ Portfolio.prototype._handleSortChange = function (evt) {
 		},
 		type: {
 			by: sortByType
+		},
+		title: {
+			by: sortByTitle
 		}
 	};
 

@@ -144,6 +144,9 @@ html, body.portfolio {
 	width: 80%;
 }
 
+.side-card .card-text.smaller-text {
+	margin-top: -3px;
+}
 
 
 .card-text {
@@ -269,4 +272,51 @@ html, body.portfolio {
 	bottom: 15px;
 	left: 15px;
 	right: 15px;
+}
+.side-card .tags {
+	bottom: 10px;
+}
+
+.youtube-video .youtube-play-icon {
+	position: absolute;
+	font-size: 50px;
+	opacity: 0.85;
+	color: white;
+	text-shadow: 1px 1px 15px black;
+}
+
+.youtube-video:hover .youtube-play-icon {
+	color: firebrick;
+	opacity: 1;
+}
+
+.medium-writing-icon.fab.fa-medium {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: xx-large;
+}
+
+.portfolio-card.card-award {
+	border-left: 8px solid #ffc107;
+}
+
+.portfolio-card.work-card.jimg {
+	border-top: 8px solid #6610f2;
+}
+.portfolio-card.work-card.jpmc {
+	border-top: 8px solid #117ACA;
+}
+
+.portfolio-card.work-card .portfolio-card-body{
+	padding-top: 6px;
+}
+
+.portfolio-card .side-card-logo img {
+	width: 100%;
+}
+
+.vp-gold-card {
+	background: #ffcd38;
+	border-color: #eca62a;
 }
