@@ -348,6 +348,14 @@ html, body.portfolio {
 	width: 100%;
 }
 
+.card-container a {
+	color: inherit;
+}
+.card-container a:hover {
+	text-decoration: inherit;
+}
+
+
 @media screen and (max-width: 900px) {
 
 	.filter-group-label {
