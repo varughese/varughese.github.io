@@ -25,6 +25,10 @@ h1 {
 }
 
 
+.show-when-small {
+	display: none;
+}
+
 html, body.portfolio {
 	height: 100%;
 }
@@ -91,6 +95,16 @@ html, body.portfolio {
 	color: #757575;
 }
 
+.go-home-link {
+	position: absolute;
+	margin-left: -40px;
+	margin-top: 35px;
+	font-size: .3em;
+}
+.go-home-link a {
+	color: black;
+}
+
 @media screen and (max-width: 700px) {
 	.info .links .link-icon span {
 		display: none;
@@ -98,6 +112,12 @@ html, body.portfolio {
 
 	h1 {
 		font-size: 3.5rem;
+	}
+	.go-home-link {
+		margin: 0;
+		left: 15px;
+		top: 40px;
+		font-size: .5em;
 	}
 
 	.links {
@@ -111,6 +131,18 @@ html, body.portfolio {
 
 	.main-block {
 		margin-top: 15px;
+	}
+
+	    margin: 0;
+    left: 15px;
+    top: 40px;
+    font-size: .5em;
+
+	.show-when-small {
+		display: block;
+	}
+	.hide-when-small {
+		display: none;
 	}
 }
 
@@ -316,7 +348,25 @@ html, body.portfolio {
 	width: 100%;
 }
 
-.vp-gold-card {
-	background: #ffcd38;
-	border-color: #eca62a;
+.card-container a {
+	color: inherit;
+}
+.card-container a:hover {
+	text-decoration: inherit;
+}
+
+
+@media screen and (max-width: 900px) {
+
+	.filter-group-label {
+		display: none;
+	}
+
+	html, body {
+		height: auto;
+	}
+
+	body.portfolio {
+		padding: 0;
+	}
 }
