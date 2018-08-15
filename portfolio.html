@@ -13,19 +13,35 @@
 		crossorigin="anonymous">
 			<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121861795-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-121861795-1');
+	</script>
 	<title>Mat | Projects</title>
 </head>
 
 <body class="portfolio">
 	<div class="main-block container-fluid">
 		<div class="header">
-			<h1>Portfolio</h1>
+			<h1>
+				<span class="go-home-link"><a title="Go Home" href="/index.html">
+					<i class="fas fa-long-arrow-alt-left"></i></a>
+				</span>Portfolio
+			</h1>
 			<p> (Under Dev .. Check Back Soon)</p>
 		</div>
 		<div class="filter-control-container row">
 			<div class="col-md-12">
 				<div class="row justify-content-md-center">
-					<div class="filter-group col-md-auto col-sm-12">
+					<div class="filter-group col-md-auto col-sm-2">
 						<div class="filter-group-label">Type</div>
 						<div class="btn-group btn-group-toggle" id="shuffle-filteron-type" role="group">
 							<label class="btn btn-outline-danger btn-sm">
@@ -482,7 +498,7 @@
 				</div>
 				<!-- Vicepres -->
 				<div class="card-container col-lg-6 col-sm-8 col-xl-4" data-type="award">
-					<div class="portfolio-card side-card side-card-img vp-gold-card">
+					<div class="portfolio-card side-card side-card-img card-award">
 						<div class="portfolio-card-body">
 							<h5 class="portfolio-card-title">PittCSC Vice President</h5>
 							<p class="card-text smaller-text">Trying to change the face of Pitt CS with the other officers (also made the logo)</p>

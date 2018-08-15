@@ -31,7 +31,8 @@
 <body class="blue-border">
 	<div class="main-block">
 		<div class="header">
-			<h1>Mathew Varughese</h1>
+			<h1 class="hide-when-small">Mathew Varughese</h1>
+			<h1 class="show-when-small">Mat Varughese</h1>
 		</div>
 		<div class="info">
 			<div>
@@ -85,7 +86,8 @@
 			"\"I cannot remember the books Ive read any more that than the meals I have eaten; even so, they have made me\"", 
 			'"Too much of anything becomes its opposite"', 
 			'"Luck is what happens when preparation meets opportunity"', 
-			'"Success isn\'t about being the best. It\'s about always getting better."'
+			'"Success isn\'t about being the best. It\'s about always getting better."',
+ 			'"Glimpses of ingeniousness are not inexplicable miracles, but rather the residue of experience"'
 		];
 
 		document.getElementById('quote').innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
