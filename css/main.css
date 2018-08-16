@@ -25,6 +25,13 @@ h1 {
 }
 
 
+.description {
+	text-align: center;
+	margin: 0;
+	font-size: 10pt;
+	margin-top: -10px;
+}
+
 .show-when-small {
 	display: none;
 }
@@ -133,11 +140,6 @@ html, body.portfolio {
 		margin-top: 15px;
 	}
 
-	    margin: 0;
-    left: 15px;
-    top: 40px;
-    font-size: .5em;
-
 	.show-when-small {
 		display: block;
 	}
@@ -170,10 +172,9 @@ html, body.portfolio {
 .portfolio-card.side-card.side-card-img .aspect {
 	padding: 0;
 	height: 100%;
-	width: 20%;
 }
 .portfolio-card.side-card-img .portfolio-card-body {
-	width: 80%;
+	width: calc(100% - 110px);
 }
 
 .side-card .card-text.smaller-text {
@@ -309,6 +310,17 @@ html, body.portfolio {
 	bottom: 10px;
 }
 
+.work-card .tags {
+	right: 50px;
+}
+
+.work-card .work-logo {
+	width: 40px;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
 .youtube-video .youtube-play-icon {
 	position: absolute;
 	font-size: 50px;
@@ -344,8 +356,8 @@ html, body.portfolio {
 	padding-top: 6px;
 }
 
-.portfolio-card .side-card-logo img {
-	width: 100%;
+.portfolio-card .side-card-logo {
+	width: 110px;
 }
 
 .card-container a {

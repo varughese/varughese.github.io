@@ -118,7 +118,7 @@ Portfolio.prototype._handleSortChange = function (evt) {
 	this._handleInputClick(evt);
 
 	function sortByDate(el) {
-		return el.getAttribute("data-date");
+		return new Date(el.getAttribute("data-date"));
 	}
 
 	function sortByType(el) {
