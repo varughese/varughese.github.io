@@ -362,6 +362,11 @@ html, body.portfolio {
 	width: 110px;
 }
 
+.portfolio-card:hover .flag::before {
+	background: #9575CE;
+    border: 4px solid #512DA8;
+}
+
 .card-container a {
 	color: inherit;
 }
@@ -568,6 +573,23 @@ blockquote.blockquote {
     left: 1px;
 }
 
+.timeline-item .portfolio-card-body.flag-wrapper {
+	width: 100%;
+}
+
+.timeline-item .portfolio-card.has-logo .work-logo {
+	width: 40px;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+.timeline-item .portfolio-card.has-logo.direction-l .work-logo {
+	left: 10px;
+}
+.timeline-item .portfolio-card.has-logo p.card-text {
+	padding-bottom: 20px;
+}
+
 /* ================ Timeline Media Queries ================ */
 
 @media screen and (max-width: 750px) {
@@ -620,6 +642,10 @@ blockquote.blockquote {
 		pointer-events: none;
 	}
 
+	.timeline-item .portfolio-card.has-logo.direction-l .work-logo {
+		left: initial;
+	}
+
 	.timeline-item .flag-shadow:after {
 		content: "";
 		position: absolute;
@@ -637,6 +663,10 @@ blockquote.blockquote {
 	.timeline-item .direction-l .date {
 		left: 1px;
 		right: initial;
+	}
+
+	.timeline-item .portfolio-card-body.flag-wrapper {
+		width: 100%;
 	}
 
 	body.about {
