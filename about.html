@@ -48,7 +48,7 @@
 			<ul class="timeline">
 
 				<!-- Item 1 -->
-				<li class="timeline-item">
+				<!-- <li class="timeline-item">
 					<div class=" portfolio-card has-logo direction-r">
 						<div class="portfolio-card-body flag-wrapper">
 							<h5 class="portfolio-card-title flag">
@@ -56,7 +56,7 @@
 									Alpine Mechanical Services
 								</span>
 							</h5>
-							<p class="card-text smaller-text">A description of all the lectures and courses I have taken and my final
+							<p class="card-text">A description of all the lectures and courses I have taken and my final
 								degree?
 							</p>
 							<img class="work-logo" title="Interactive Multimedia Group, my first job" src="images/img.png"></img>
@@ -67,10 +67,10 @@
 							</div>
 						</div>
 					</div>
-				</li>
+				</li> -->
 
 				<!-- Item 2 -->
-				<li class="timeline-item">
+				<!-- <li class="timeline-item">
 					<div class=" portfolio-card has-logo direction-l">
 						<div class="portfolio-card-body flag-wrapper">
 							<h5 class="portfolio-card-title flag">
@@ -79,7 +79,7 @@
 								</span>
 								<span class="date">JUN 15</span>
 							</h5>
-							<p class="card-text smaller-text">A description of all the lectures and courses I have taken and my final
+							<p class="card-text">A description of all the lectures and courses I have taken and my final
 								degree?
 							</p>
 							<img class="work-logo" title="Interactive Multimedia Group, my first job" src="images/img.png"></img>
@@ -90,37 +90,137 @@
 							</div>
 						</div>
 					</div>
-				</li>
-
-				<!-- Item 3 -->
-				<li class="timeline-item">
-					<div class=" portfolio-card direction-r">
-						<div class="portfolio-card-body flag-wrapper">
-							<h5 class="portfolio-card-title flag">
-								<span class="flag flag-shadow">
-									Alpine Mechanical Services
-								</span>
-								<span class="date">JUL 15</span>
-							</h5>
-							<p class="card-text smaller-text">A description of all the lectures and courses I have taken and my final
-								degree?
-							</p>
-							<div class="tags">
-								<span class="badge badge-pill badge-danger">Work</span>
-								<span class="badge badge-pill badge-info">MEAN</span>
-								<span class="badge badge-pill badge-warning">Lunr</span>
-							</div>
-						</div>
-					</div>
-				</li>
-
+				</li> -->
 			</ul>
 		</div>
-
-
-
-
 	</div>
+	<script>
+		var $timeline = document.querySelector(".timeline");
+
+		var dots = [{
+			title: "Interactive Multimedia Group",
+			date: new Date("July 30, 2018"),
+			logo: { src: "images/img.png" },
+			text: "Got my first job",
+			tags: [{text: "MEAN"}]
+		}, {
+			title: "Interactive Multimedia Group",
+			date: new Date("July 30, 2015"),
+			logo: { src: "images/img.png" },
+			text: "Got my first job",
+			tags: [{text: "MEAN"}]
+		}, {
+			title: "Interactive Multimedia Group",
+			date: new Date("July 30, 2013"),
+			text: "Got my first job",
+			tags: [{text: "MEAN"}]
+		},{
+			title: "Interactive Multimedia Group",
+			date: new Date("July 30, 2012"),
+			text: "Got my first job",
+			tags: [{text: "MEAN"}]
+		},{
+			title: "Interactive Multimedia Group",
+			date: new Date("July 30, 2011"),
+			text: "Got my first job",
+			tags: [{text: "MEAN"}]
+		},
+		].sort(function(a, b) { return a.date < b.date; });
+
+		dots.forEach(appendTimelineItem);
+		function appendTimelineItem(item, index) {
+			/*
+			<li class="timeline-item">
+				<div class="portfolio-card direction-r">
+					<div class="portfolio-card-body flag-wrapper">
+						<h5 class="portfolio-card-title flag">
+							<span class="flag flag-shadow">{{title}}</span>
+							<span class="date">JUL 15</span>
+						</h5>
+						<p class="card-text">{{text}}</p>
+						<div class="tags">{{tags}}</div>
+					</div>
+				</div>
+			</li>
+			*/
+			/* <li class="timeline-item"> */
+			var timelineItem = document.createElement("li");
+			timelineItem.classList.add("timeline-item");
+
+				/* <div class="portfolio-card direction-r"> */
+				var portfolioCard = document.createElement("div");
+				portfolioCard.classList.add("portfolio-card");
+				var isDirLeft = item.direction ? item.direction.toLowerCase().indexOf("l") > -1 : index%2==0;
+				var direction = isDirLeft ? "direction-l" : "direction-r";
+				portfolioCard.classList.add(direction);
+
+				/* <div class="portfolio-card-body flag-wrapper"> */
+				var portfolioCardBody = document.createElement("div");
+				portfolioCardBody.classList.add("portfolio-card-body");
+				portfolioCardBody.classList.add("flag-wrapper");
+
+					/* <h5 class="portfolio-card-title flag"> */
+					var portfolioCardTitle = document.createElement("h5");
+					portfolioCardTitle.classList.add("portfolio-card-title");
+					portfolioCardTitle.classList.add("flag");
+
+						/* <span class="flag flag-shadow">{{title}}</span> */
+						var flagShadowSpan = document.createElement("span");
+						flagShadowSpan.classList.add("flag");
+						flagShadowSpan.classList.add("flag-shadow");
+						flagShadowSpan.textContent = item.title;
+
+						/* <span class="date">JUL 15</span> */
+						var dateSpan = document.createElement("span");
+						dateSpan.classList.add("date")
+						dateSpan.textContent = formatDate(item.date);
+
+						portfolioCardTitle.appendChild(flagShadowSpan);
+						portfolioCardTitle.appendChild(dateSpan);
+						portfolioCardBody.appendChild(portfolioCardTitle);
+
+					/* <p class="card-text">{{text}}</p> */
+					var cardText = document.createElement("p");
+					cardText.classList.add("card-text");
+					cardText.textContent = item.text;
+					portfolioCardBody.appendChild(cardText);
+
+					if(item.logo) {
+						/* <img class="work-logo" src="{{src}}"></img> */
+						var logo = document.createElement("img");
+						logo.classList.add("work-logo");
+						logo.src = item.logo.src;
+						portfolioCardBody.appendChild(logo);
+						portfolioCard.classList.add("has-logo");
+					}
+
+					/* <div class="tags">{{tags}}</div> */
+					var tags = document.createElement("div");
+						/* <span class="badge badge-pill badge-danger">{{tag.text}}</span> */
+						item.tags.forEach(function(tag) {
+							var badge = document.createElement("span");
+							badge.classList.add("badge");
+							badge.classList.add("badge-pill");
+							badge.classList.add("badge-danger");
+							badge.textContent = tag.text;
+							tags.appendChild(badge);
+						});
+
+					tags.classList.add("tags");
+					portfolioCardBody.appendChild(tags);
+
+				portfolioCard.appendChild(portfolioCardBody);
+			
+			timelineItem.appendChild(portfolioCard);
+
+			$timeline.appendChild(timelineItem);
+		}
+
+		function formatDate(date) {
+			var months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+			return months[date.getMonth()] + " '" + (date.getYear()-100);
+		}
+	</script>
 </body>
 
 </html>
