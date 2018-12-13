@@ -390,7 +390,12 @@ body.about {
 }
 
 body.about .main-block {
+	width: 100%;
+}
+
+body.about .info {
 	width: 660px;
+	margin: 0 auto;
 }
 
 body.about .header {
@@ -403,12 +408,21 @@ blockquote.blockquote {
     padding-left: 30px;
 }
 
+.shadow-holder {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	height: 10px;
+	position: relative;
+}
+
 /* TIMELINE */
+.timeline-wrapper {
+	background: #f5f7f9;
+}
+
 .timeline {
 	position: relative;
 	width: 660px;
 	margin: 0 auto;
-	margin-top: 20px;
 	padding: 1em 0;
 	list-style-type: none;
 }
@@ -423,7 +437,6 @@ blockquote.blockquote {
 	height: 100%;
 	margin-left: -2px;
 	border-left: 2px dashed #ddd;
-	z-index: 5;
 }
 
 .timeline li {
@@ -533,33 +546,38 @@ blockquote.blockquote {
     pointer-events: none;	
 }
 
-.direction-l .time-wrapper {
-	float: left;
+/* Timeline-Item */
+.timeline-item .portfolio-card {
+	height: initial;
 }
 
-.direction-r .time-wrapper {
-	float: right;
+.timeline-item .tags {
+	position: initial;
+	margin-bottom: 8px;
 }
 
-.desc {
-	margin: 1em 0.75em 0 0;
-
-	font-size: 0.77777em;
-	font-style: italic;
-	line-height: 1.5em;
+.timeline-item .date {
+	position: absolute;
+    top: -21px;
+    font-size: 13px;
 }
-
-.direction-r .desc {
-	margin: 1em 0 0 0.75em;
+.timeline-item .direction-l .date {
+    right: 1px;
+}
+.timeline-item .direction-r .date {
+    left: 1px;
 }
 
 /* ================ Timeline Media Queries ================ */
 
-@media screen and (max-width: 660px) {
-
+@media screen and (max-width: 750px) {
 	.timeline {
-		width: 100%;
+		width: auto;
 		padding: 4em 0 1em 0;
+	}
+
+	.timeline-wrapper {
+		padding: 0 40px;
 	}
 
 	.timeline li {
@@ -570,8 +588,7 @@ blockquote.blockquote {
 	.direction-r {
 		float: none;
 		width: 100%;
-
-		text-align: center;
+		text-align: left;
 	}
 
 	.direction-l .flag:before,
@@ -581,16 +598,14 @@ blockquote.blockquote {
 		left: 50%;
 		content: ' ';
 		display: block;
-		width: 12px;
-		height: 12px;
-		margin-left: -9px;
-		background: #fff;
+		width: 20px;
+		height: 20px;
+		margin-left: -11px;
 		border-radius: 10px;
-		border: 4px solid rgb(255, 80, 80);
 		z-index: 10;
 	}
 
-	.direction-l .flag:after,
+	.timeline-item .flag:after,
 	.direction-r .flag:after {
 		content: "";
 		position: absolute;
@@ -598,66 +613,42 @@ blockquote.blockquote {
 		top: -8px;
 		height: 0;
 		width: 0;
-		margin-left: -8px;
+		margin-left: -9px;
 		border: solid transparent;
 		border-bottom-color: rgb(255, 255, 255);
 		border-width: 8px;
 		pointer-events: none;
 	}
 
-	.time-wrapper {
-		display: block;
-		position: relative;
-		margin: 4px 0 0 0;
-		z-index: 14;
+	.timeline-item .flag-shadow:after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: -10px;
+		height: 0;
+		width: 0;
+		margin-left: -11px;
+		border: solid transparent;
+		border-bottom-color: #dddddd;
+		border-width: 10px;
+		pointer-events: none;
 	}
 
-	.direction-l .time-wrapper {
-		float: none;
+	.timeline-item .direction-l .date {
+		left: 1px;
+		right: initial;
 	}
 
-	.direction-r .time-wrapper {
-		float: none;
+	body.about {
+		padding: 0;
 	}
 
-	.desc {
-		position: relative;
-		margin: 1em 0 0 0;
-		padding: 1em;
-		background: rgb(245, 245, 245);
-		-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
-		-moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
-		box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
-
-		z-index: 15;
+	body.about .info {
+		width: 100%;
+		padding: 0 12px;
 	}
-
-	.direction-l .desc,
-	.direction-r .desc {
-		position: relative;
-		margin: 1em 1em 0 1em;
-		padding: 1em;
-
-		z-index: 15;
+	body.about blockquote.blockquote {
+		padding-left: 12px;
 	}
-
 }
 
-@media screen and (min-width: 400px) and (max-width: 660px) {
-
-	.direction-l .desc,
-	.direction-r .desc {
-		margin: 1em 4em 0 4em;
-	}
-
-}
-
-/* Timeline-Item */
-.timeline-item .portfolio-card {
-	height: initial;
-}
-
-.timeline-item .tags {
-	position: initial;
-	margin-bottom: 8px;
-}
