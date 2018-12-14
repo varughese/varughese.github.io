@@ -47,7 +47,8 @@
 			</blockquote>
 			<p>
 				This quote in Steve Jobs' commencement speech compares life choices to dots. In this timeline below I tried to show
-				how my own "dots" connected.
+				how my own "dots" connect.</p>
+			<p> Want <span id="more-detail">more</span> detail? Click <button onclick="toggleMoreDetail()" class="btn btn-xs btn-primary">here</button>.
 			</p>
 		</div>
 		<div class="shadow-holder"></div>
@@ -103,39 +104,119 @@
 	</div>
 	<script>
 		var $timeline = document.querySelector(".timeline");
+		var $toggleWord = document.querySelector("#more-detail");
 
 		var dots = [{
 			title: "Interactive Multimedia Group",
 			date: new Date("July 30, 2015"),
 			logo: { src: "images/img.png" },
-			text: "I was looking for a job for a while in high school without much success. I saw an on Craiglist for a JavaScript developer. It seemed sketchy but I went in anyways.",
+			short: "Worked at local web dev shop in highschool",
+			text: "In high school I was job hunting without much success. I saw an on Craiglist for a JavaScript developer. It seemed sketchy but I decided to apply. Turned out to be a great descision. I worked here for three years and was extremely confused in the beginning. I did not realize it at the time, but I was learning really valuable skills that would benefit me a TON.",
 			tags: [{text: "Work"}]
 		}, {
-			title: "Interactive Multimedia Group",
-			date: new Date("July 30, 2015"),
-			logo: { src: "images/img.png" },
-			text: "Got my first job",
-			tags: [{text: "MEAN"}]
+			title: "PSP, iPods, Pranks",
+			date: new Date("December 10, 2008"),
+			text: "Spent a month figuring out how to transfer photos onto my PSP. Learned how to jailbreak iPods. Watched random YouTube videos about technology. Wrote a .bat script that ejected the CD drive at random intervals to prank my older brothers. That is what they get for never letting me play Super Nintendo with them.",
+			tags: [{text: "Elementary School"}]
 		}, {
-			title: "Interactive Multimedia Group",
-			date: new Date("July 30, 2013"),
-			text: "Got my first job",
-			tags: [{text: "MEAN"}]
+			title: "HTML for Dummies",
+			date: new Date("July 30, 2009"),
+			short: "Introduced to coding by this book and Codeacademy",
+			text: "I got this book from the library and went through it. Had no idea what I was doing but it was fun typing stuff into NotePad and seeing things change. Eventually I would go on CodeAcademy and learn the basics of Javascript.",
+			tags: [{text: "Elementary School"}]
 		},{
-			title: "Interactive Multimedia Group",
-			date: new Date("July 30, 2012"),
-			text: "Got my first job",
-			tags: [{text: "MEAN"}]
+			title: "AP Computer Science",
+			date: new Date("May 3, 2016"),
+			text: "Learned Java in this class and loved it. It was about this time I realized I wanted to major in CS (over engineering or math).",
+			tags: [{text: "High School"}]
 		},{
-			title: "Interactive Multimedia Group",
-			date: new Date("July 30, 2011"),
-			text: "Got my first job",
-			tags: [{text: "MEAN"}]
-		},
-		].sort(function(a, b) { return a.date < b.date; });
+			title: "Rejections",
+			date: new Date("March 31, 2017"),
+			text: "I was rejected by CMU, waitlisted by Penn and Cornell. I spent a lot of money and time on my essays to apply to those schools. Even though I am not sure if I would have attended if I got accepted (dependent on finacial aid) the rejections hurt. I emailed the guy I interviewed for Penn and he told me, \"At the end of the day, what you get out of your undergraduate experience is wholly up to you.\" <i>Wholly up to you</i>. For some reason this phrase stuck without me throughout the years. It took me some time to believe it, but now I truly do.",
+			tags: [{text: "High School"}]
+		}, {
+			title: "University of Pittsburgh",
+			date: new Date("May 1, 2017"),
+			short: "Chose to go to Pitt! #H2P",
+			text: "I had to decide between Temple and Pitt. Decided to move across the state and go to Pitt. Pretty sure I made the right choice. But I don't think there was \"right\" choice.",
+			tags: [{text: "High School"}]
+		},{
+			title: "Kent State Hackathon",
+			date: new Date("Oct 1, 2017"),
+			text: "I was expecting to be judged on quality of code. Instead, it was all about your idea and how you can pitch it. I did not really like that and felt it promoted bad code. Still free food and met people so it was chill.",
+			tags: [{text: "College"}, {text: "Hackathon"}]
+		},{
+			title: "JPMorgan Code for Good Hackathon",
+			date: new Date("Nov 1, 2017"),
+			short: "Won a hackathon sponsored by JP and offered internship",
+			text: "I applied to this thing in September and forgot about it. End of October I got an email that invited me to fly out to Delaware. Free flight and free food? Why not. I went and used my previous hackathon expierence and web-dev skills from my old job to help me get the win. This hackathon was a little more organized and had focus on code quality as well. It restored my faith in hackathons. I also met people from across the country that I am still friends with.",
+			tags: [{text: "College"}, {text: "Hackathon"}]
+		},{
+			title: "PittCSC",
+			date: new Date("April 1, 2018"),
+			short: "I received lots of help in my life. Became VP of CS club to pay it forward.",
+			logo: { src: "images/pitt.svg", css: "pitt-logo-gold-bg" },
+			text: "When I first came to Pitt I asked a lot of advice from the PittCSC (CS Club) Vice President. At the end of the semester he did not run so I decided I could pay it forward and help out the club by becoming an officer. Now I am the VP",
+			tags: [{text: "College"}, {text: "Club"}]
+		},{
+			title: "Eagles won Super Bowl",
+			date: new Date("Feb 4, 2018"),
+			text: "GOOOOOOOOOOOO BIRRRRRRDS!",
+			tags: [{text: "College"}, {text: "Philly"}]
+		},{
+			title: "JPMorgan Chase & Co",
+			date: new Date("June 4, 2018"),
+			logo: { src: "images/jp.png" },
+			short: "Worked in Houston on Data team",
+			text: "Traveled to Houston for the summer. I was not a fan of the corporate feel, cubicles, and layers of bureaucracy. Or Houston. My biggest gripe was the super slow machines we were given. But, the other interns were awesome and my team had many smart engineers.",
+			tags: [{text: "Summer"}, {text: "Work"}]
+		},{
+			title: "UTA & Peer Tutor",
+			date: new Date("Aug 30, 2018"),
+			logo: { src: "images/cathy.png" },
+			short: "Turns out, this is a great way to practice explaining code and communicating your thoughts. Which is great for interviews (and life!)",
+			text: "I've always enjoyed teaching. I decided to become a teaching assistant and tutor to make a little cash to pay for groceries. Turns out, it is a great way to practice explaining code and communicating your thoughts. Which is great for interviews (and life!)",
+			tags: [{text: "College"}, {text: "Work"}]
+		}, {
+			title: "Made this Website",
+			date: new Date("June 30, 2018"),
+			short: "Lowkey I think this got me into Google",
+			text: "Decided I needed a website. I did not feel like it and I doubted it would make any difference. But, during my Google interview, the interviewer mentioned my website and seemed impressed with it. So a good choice.",
+			tags: [{text: "College"}, {text: "Side Project"}]
+		}, {
+			title: "Google",
+			date: new Date("May 30, 2019"),
+			logo: { src: "images/google.png" },
+			short: "Working on Google Sheets in NYC!",
+			text: "Got my dream internship! I really thought I failed my interviews. Super surreal. Gonna be working on the Google Sheets team in New York!",
+			tags: [{text: "Work"}, {text: "New York"}]
+		}, {
+			title: "Stripe",
+			date: new Date("Sept 30, 2019"),
+			logo: { src: "images/stripe.png" },
+			short: "In the fall I will be in San Francisco at this awesome Unicorn",
+			text: "During my on-site at Stripe I fell in love with the place. I did not know how to pick between Google or Stripe for my summer internship. I was shocked I even had both options. Ended up asking my Stripe recruiter if I could delay it to the fall. She was chill about it and I decided to do it. Was it a good choice? Guess we will have to wait to find out.",
+			tags: [{text: "Work"}, {text: "San Francisco"}]
+		}
+		].sort(function(a, b) { return b.date.getTime() - a.date.getTime(); });
+
+		var options = {
+			short: true,
+			startRight: true
+		};
 
 		dots.forEach(appendTimelineItem);
+
+		function toggleMoreDetail() {
+			$timeline.innerHTML = "";
+			options.short = !options.short;
+			options.startRight = !options.startRight;
+			$toggleWord.textContent = $toggleWord.textContent == "less" ? "more" : "less";
+			dots.forEach(appendTimelineItem);
+		}
+
 		function appendTimelineItem(item, index) {
+			if(options.short && !item.short) return;
 			/*
 			<li class="timeline-item">
 				<div class="portfolio-card direction-r">
@@ -158,6 +239,7 @@
 				var portfolioCard = document.createElement("div");
 				portfolioCard.classList.add("portfolio-card");
 				var isDirLeft = item.direction ? item.direction.toLowerCase().indexOf("l") > -1 : index%2==0;
+				if(options.startRight) isDirLeft = !isDirLeft;
 				var direction = isDirLeft ? "direction-l" : "direction-r";
 				portfolioCard.classList.add(direction);
 
@@ -189,7 +271,7 @@
 					/* <p class="card-text">{{text}}</p> */
 					var cardText = document.createElement("p");
 					cardText.classList.add("card-text");
-					cardText.textContent = item.text;
+					cardText.innerHTML = options.short ? item.short : item.text;
 					portfolioCardBody.appendChild(cardText);
 
 					if(item.logo) {
@@ -197,23 +279,24 @@
 						var logo = document.createElement("img");
 						logo.classList.add("work-logo");
 						logo.src = item.logo.src;
+						if(item.logo.css) logo.classList.add(item.logo.css);
 						portfolioCardBody.appendChild(logo);
 						portfolioCard.classList.add("has-logo");
 					}
 
 					/* <div class="tags">{{tags}}</div> */
 					var tags = document.createElement("div");
-						/* <span class="badge badge-pill badge-danger">{{tag.text}}</span> */
-						item.tags.forEach(function(tag) {
-							var badge = document.createElement("span");
-							badge.classList.add("badge");
-							badge.classList.add("badge-pill");
-							badge.classList.add("badge-danger");
-							badge.textContent = tag.text;
-							tags.appendChild(badge);
-						});
-
-					tags.classList.add("tags");
+					// 	/* <span class="badge badge-pill badge-danger">{{tag.text}}</span> */
+					// 	item.tags.forEach(function(tag) {
+					// 		var badge = document.createElement("span");
+					// 		badge.classList.add("badge");
+					// 		badge.classList.add("badge-pill");
+					// 		badge.classList.add("badge-danger");
+					// 		badge.textContent = tag.text;
+					// 		tags.appendChild(badge);
+					// 		tags.appendChild(document.createTextNode(" "));
+					// 	});
+					// tags.classList.add("tags");
 					portfolioCardBody.appendChild(tags);
 
 				portfolioCard.appendChild(portfolioCardBody);
@@ -224,8 +307,9 @@
 		}
 
 		function formatDate(date) {
-			var months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
-			return months[date.getMonth()] + " '" + (date.getYear()-100);
+			var months = ["JAN", "FEB", "MARCH", "APR", "MAY", "JUNE", "JULY", "AUG", "SEPT", "OCT", "NOV", "DEC"];
+			var year = date.getYear()-100;
+			return months[date.getMonth()] + " " + date.getFullYear();
 		}
 	</script>
 </body>

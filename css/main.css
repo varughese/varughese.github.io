@@ -408,6 +408,12 @@ body.about .header {
 	text-align: center;
 }
 
+button.btn.btn-xs {
+	position: relative;
+    top: -1px;
+    padding: 0 .5rem;
+}
+
 blockquote.blockquote {
 	border-left: 8px solid #ddd;
     padding-left: 30px;
@@ -581,7 +587,13 @@ blockquote.blockquote {
 	width: 40px;
 	position: absolute;
 	right: 10px;
-	bottom: 10px;
+	bottom: -20px;
+}
+
+.pitt-logo-gold-bg {
+	height: 40px;
+	padding: 4px 2px 5px 5px;
+	background: #cdb87d;
 }
 .timeline-item .portfolio-card.has-logo.direction-l .work-logo {
 	left: 10px;
