@@ -362,6 +362,11 @@ html, body.portfolio {
 	width: 110px;
 }
 
+.portfolio-card:hover .flag::before {
+	background: #9575CE;
+    border: 4px solid #512DA8;
+}
+
 .card-container a {
 	color: inherit;
 }
@@ -384,3 +389,308 @@ html, body.portfolio {
 		padding: 0;
 	}
 }
+
+body.about {
+	font-size: 12pt;
+}
+
+body.about .main-block {
+	width: 100%;
+}
+
+body.about .info {
+	width: 660px;
+	margin: 0 auto;
+}
+
+body.about .header {
+	width: 100%;
+	text-align: center;
+}
+
+button.btn.btn-xs {
+	position: relative;
+    top: -1px;
+    padding: 0 .5rem;
+}
+
+blockquote.blockquote {
+	border-left: 8px solid #ddd;
+    padding-left: 30px;
+}
+
+.shadow-holder {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	height: 10px;
+	position: relative;
+}
+
+/* TIMELINE */
+.timeline-wrapper {
+	background: #f5f7f9;
+}
+
+.timeline {
+	position: relative;
+	width: 660px;
+	margin: 0 auto;
+	padding: 1em 0;
+	list-style-type: none;
+}
+
+.timeline:before {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	content: ' ';
+	display: block;
+	width: 2px;
+	height: 100%;
+	margin-left: -2px;
+	border-left: 2px dashed #ddd;
+}
+
+.timeline li {
+	padding: 1em 0;
+}
+
+.timeline li:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.direction-l {
+	position: relative;
+	width: 300px;
+	float: left;
+	text-align: right;
+}
+
+.direction-r {
+	position: relative;
+	width: 300px;
+	float: right;
+}
+
+.flag-wrapper {
+	position: relative;
+	display: inline-block;
+}
+
+
+.direction-l .flag:before,
+.direction-r .flag:before {
+	position: absolute;
+	top: 50%;
+	right: -40px;
+	content: ' ';
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-top: -10px;
+	background: #31a0ff;
+	border-radius: 10px;
+	border: 4px solid rgb(0, 71, 132);
+	z-index: 10;
+}
+
+.direction-r .flag:before {
+	left: -42px;
+}
+
+.direction-l .flag:after {
+	content: "";
+	position: absolute;
+	left: 100%;
+	top: 50%;
+	height: 0;
+	width: 0;
+	margin-top: -8px;
+	border: solid transparent;
+	border-left-color: white;
+	border-width: 8px;
+	pointer-events: none;
+}
+
+.direction-l .flag-shadow:after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    height: 0;
+    width: 0;
+    margin-top: -10px;
+    border: solid transparent;
+    border-left-color: #dddddd;
+    border-width: 10px;
+    pointer-events: none;	
+}
+
+.direction-r .flag:after {
+	content: "";
+	position: absolute;
+	right: 100%;
+	top: 50%;
+	height: 0;
+	width: 0;
+	margin-top: -8px;
+	border: solid transparent;
+	border-right-color: white;
+	border-width: 8px;
+	pointer-events: none;
+}
+
+.direction-r .flag-shadow:after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    height: 0;
+    width: 0;
+    margin-top: -10px;
+    border: solid transparent;
+    border-right-color: #dddddd;
+    border-width: 10px;
+    pointer-events: none;	
+}
+
+/* Timeline-Item */
+.timeline-item .portfolio-card {
+	height: initial;
+}
+
+.timeline-item .tags {
+	position: initial;
+	margin-bottom: 8px;
+}
+
+.timeline-item .date {
+	position: absolute;
+    top: -21px;
+    font-size: 13px;
+}
+.timeline-item .direction-l .date {
+    right: 1px;
+}
+.timeline-item .direction-r .date {
+    left: 1px;
+}
+
+.timeline-item .portfolio-card-body.flag-wrapper {
+	width: 100%;
+}
+
+.timeline-item .portfolio-card.has-logo .work-logo {
+	width: 40px;
+	position: absolute;
+	right: 10px;
+	bottom: -20px;
+}
+
+.pitt-logo-gold-bg {
+	height: 40px;
+	padding: 4px 2px 5px 5px;
+	background: #cdb87d;
+}
+.timeline-item .portfolio-card.has-logo.direction-l .work-logo {
+	left: 10px;
+}
+.timeline-item .portfolio-card.has-logo p.card-text {
+	padding-bottom: 20px;
+}
+
+/* ================ Timeline Media Queries ================ */
+
+@media screen and (max-width: 750px) {
+	.timeline {
+		width: auto;
+		padding: 4em 0 1em 0;
+	}
+
+	.timeline-wrapper {
+		padding: 0 40px;
+	}
+
+	.timeline li {
+		padding: 2em 0;
+	}
+
+	.direction-l,
+	.direction-r {
+		float: none;
+		width: 100%;
+		text-align: left;
+	}
+
+	.direction-l .flag:before,
+	.direction-r .flag:before {
+		position: absolute;
+		top: -30px;
+		left: 50%;
+		content: ' ';
+		display: block;
+		width: 20px;
+		height: 20px;
+		margin-left: -11px;
+		border-radius: 10px;
+		z-index: 10;
+	}
+
+	.timeline-item .flag:after,
+	.direction-r .flag:after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: -8px;
+		height: 0;
+		width: 0;
+		margin-left: -9px;
+		border: solid transparent;
+		border-bottom-color: rgb(255, 255, 255);
+		border-width: 8px;
+		pointer-events: none;
+	}
+
+	.timeline-item .portfolio-card.has-logo.direction-l .work-logo {
+		left: initial;
+	}
+
+	.timeline-item .flag-shadow:after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: -10px;
+		height: 0;
+		width: 0;
+		margin-left: -11px;
+		border: solid transparent;
+		border-bottom-color: #dddddd;
+		border-width: 10px;
+		pointer-events: none;
+	}
+
+	.timeline-item .direction-l .date {
+		left: 1px;
+		right: initial;
+	}
+
+	.timeline-item .portfolio-card-body.flag-wrapper {
+		width: 100%;
+	}
+
+	body.about {
+		padding: 0;
+	}
+
+	body.about .info {
+		width: 100%;
+		padding: 0 12px;
+	}
+	body.about blockquote.blockquote {
+		padding-left: 12px;
+	}
+}
+

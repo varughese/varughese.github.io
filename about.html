@@ -8,41 +8,310 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-	    crossorigin="anonymous">
+	 crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Markazi+Text|Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-	    crossorigin="anonymous">
+	 crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
-	<title>Mat Varughese | Projects</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#004784">
+	<meta name="msapplication-TileColor" content="#ffc40d">
+	<meta name="theme-color" content="#ffffff">
+	<title>Mat Varughese | About Me</title>
 </head>
 
-<body>
+<body class="about">
 	<div class="main-block">
 		<div class="header">
-			<h1>About Me</h1>
+			<h1><span class="go-home-link">
+					<a title="Go Home" href="/index.html">
+						<i class="fas fa-long-arrow-alt-left"></i>
+					</a>
+				</span>About Me</h1>
 		</div>
 		<div class="info">
-			<div>
-				<p>
-					I am from a suburb of Philly called Horsham. I love math and learning and taught myself programming around middle school. In high school I took 
-					AP Computer Science and had a job as a web developer at a local webdev shop, Interactive Multimedia Group. It was a lot of work but I learned a lot!
-				</p>
-				<p>
-					I am currently a CS student at the University of Pittsburgh, which is about 300 miles from Home.
-				</p>
-				<p>
-					In November 2017 I went to a hackathon sponsored by JPMorgan and then got offered an internship. So, Summer 2018 I went to Houston, TX and worked for JPMorgan Chase & Co. 
-					Although I discovered I am not that passionate about finance, I still met a lot of awesome people.
-				</p>
-				<p>
-					Feel free to contact me at <u>matvarughese3@gmail.com</u>!
-				</p>
-			</div>
+			<blockquote class="blockquote text-left mb-4">
+				<p class="mb-0">“You can’t connect the dots looking forward; you can only connect them looking backwards. So you
+					have to trust that the dots will somehow connect in your future. You have to trust in something – your gut,
+					destiny, life, karma, whatever. Because believing that the dots will connect down the road will give you the
+					confidence to follow your heart even when it leads you off the well worn path; and that will make all the
+					difference.”</p>
+				<footer class="blockquote-footer  text-right">Steve Jobs in
+					<cite title="Steve Jobs Commencement Speech">
+						<a href="https://www.youtube.com/watch?v=UF8uR6Z6KLc">Stanford '05 Commencement Speech</a>
+					</cite>
+				</footer>
+			</blockquote>
+			<p>
+				This quote in Steve Jobs' commencement speech compares life choices to dots. In this timeline below I tried to show
+				how my own "dots" connect.</p>
+			<p> Want <span id="more-detail">more</span> detail? Click <button onclick="toggleMoreDetail()" class="btn btn-xs btn-primary">here</button>.
+			</p>
 		</div>
-		<div class="info">
-			<a href="index.html">Back to Home</a>
+		<div class="shadow-holder"></div>
+		<div class="timeline-wrapper">
+			<ul class="timeline">
+
+				<!-- Item 1 -->
+				<!-- <li class="timeline-item">
+					<div class=" portfolio-card has-logo direction-r">
+						<div class="portfolio-card-body flag-wrapper">
+							<h5 class="portfolio-card-title flag">
+								<span class="flag flag-shadow">
+									Alpine Mechanical Services
+								</span>
+							</h5>
+							<p class="card-text">A description of all the lectures and courses I have taken and my final
+								degree?
+							</p>
+							<img class="work-logo" title="Interactive Multimedia Group, my first job" src="images/img.png"></img>
+							<div class="tags">
+								<span class="badge badge-pill badge-danger">Work</span>
+								<span class="badge badge-pill badge-info">MEAN</span>
+								<span class="badge badge-pill badge-warning">Lunr</span>
+							</div>
+						</div>
+					</div>
+				</li> -->
+
+				<!-- Item 2 -->
+				<!-- <li class="timeline-item">
+					<div class=" portfolio-card has-logo direction-l">
+						<div class="portfolio-card-body flag-wrapper">
+							<h5 class="portfolio-card-title flag">
+								<span class="flag flag-shadow">
+									Alpine Mechanical Services
+								</span>
+								<span class="date">JUN 15</span>
+							</h5>
+							<p class="card-text">A description of all the lectures and courses I have taken and my final
+								degree?
+							</p>
+							<img class="work-logo" title="Interactive Multimedia Group, my first job" src="images/img.png"></img>
+							<div class="tags">
+								<span class="badge badge-pill badge-danger">Work</span>
+								<span class="badge badge-pill badge-info">MEAN</span>
+								<span class="badge badge-pill badge-warning">Lunr</span>
+							</div>
+						</div>
+					</div>
+				</li> -->
+			</ul>
 		</div>
 	</div>
+	<script>
+		var $timeline = document.querySelector(".timeline");
+		var $toggleWord = document.querySelector("#more-detail");
+
+		var dots = [{
+			title: "Interactive Multimedia Group",
+			date: new Date("July 30, 2015"),
+			logo: { src: "images/img.png" },
+			short: "Worked at local web dev shop in highschool",
+			text: "In high school I was job hunting without much success. I saw an on Craiglist for a JavaScript developer. It seemed sketchy but I decided to apply. Turned out to be a great descision. I worked here for three years and was extremely confused in the beginning. I did not realize it at the time, but I was learning really valuable skills that would benefit me a TON.",
+			tags: [{text: "Work"}]
+		}, {
+			title: "PSP, iPods, Pranks",
+			date: new Date("December 10, 2008"),
+			text: "Spent a month figuring out how to transfer photos onto my PSP. Learned how to jailbreak iPods. Watched random YouTube videos about technology. Wrote a .bat script that ejected the CD drive at random intervals to prank my older brothers. That is what they get for never letting me play Super Nintendo with them.",
+			tags: [{text: "Elementary School"}]
+		}, {
+			title: "HTML for Dummies",
+			date: new Date("July 30, 2009"),
+			short: "Introduced to coding by this book and Codeacademy",
+			text: "I got this book from the library and went through it. Had no idea what I was doing but it was fun typing stuff into NotePad and seeing things change. Eventually I would go on CodeAcademy and learn the basics of Javascript.",
+			tags: [{text: "Elementary School"}]
+		},{
+			title: "AP Computer Science",
+			date: new Date("May 3, 2016"),
+			text: "Learned Java in this class and loved it. It was about this time I realized I wanted to major in CS (over engineering or math).",
+			tags: [{text: "High School"}]
+		},{
+			title: "Rejections",
+			date: new Date("March 31, 2017"),
+			text: "I was rejected by CMU, waitlisted by Penn and Cornell. I spent a lot of money and time on my essays to apply to those schools. Even though I am not sure if I would have attended if I got accepted (dependent on finacial aid) the rejections hurt. I emailed the guy I interviewed for Penn and he told me, \"At the end of the day, what you get out of your undergraduate experience is wholly up to you.\" <i>Wholly up to you</i>. For some reason this phrase stuck without me throughout the years. It took me some time to believe it, but now I truly do.",
+			tags: [{text: "High School"}]
+		}, {
+			title: "University of Pittsburgh",
+			date: new Date("May 1, 2017"),
+			short: "Chose to go to Pitt! #H2P",
+			text: "I had to decide between Temple and Pitt. Decided to move across the state and go to Pitt. Pretty sure I made the right choice. But I don't think there was \"right\" choice.",
+			tags: [{text: "High School"}]
+		},{
+			title: "Kent State Hackathon",
+			date: new Date("Oct 1, 2017"),
+			text: "I was expecting to be judged on quality of code. Instead, it was all about your idea and how you can pitch it. I did not really like that and felt it promoted bad code. Still free food and met people so it was chill.",
+			tags: [{text: "College"}, {text: "Hackathon"}]
+		},{
+			title: "JPMorgan Code for Good Hackathon",
+			date: new Date("Nov 1, 2017"),
+			short: "Won a hackathon sponsored by JP and offered internship",
+			text: "I applied to this thing in September and forgot about it. End of October I got an email that invited me to fly out to Delaware. Free flight and free food? Why not. I went and used my previous hackathon expierence and web-dev skills from my old job to help me get the win. This hackathon was a little more organized and had focus on code quality as well. It restored my faith in hackathons. I also met people from across the country that I am still friends with.",
+			tags: [{text: "College"}, {text: "Hackathon"}]
+		},{
+			title: "PittCSC",
+			date: new Date("April 1, 2018"),
+			short: "I received lots of help in my life. Became VP of CS club to pay it forward.",
+			logo: { src: "images/pitt.svg", css: "pitt-logo-gold-bg" },
+			text: "When I first came to Pitt I asked a lot of advice from the PittCSC (CS Club) Vice President. At the end of the semester he did not run so I decided I could pay it forward and help out the club by becoming an officer. Now I am the VP",
+			tags: [{text: "College"}, {text: "Club"}]
+		},{
+			title: "Eagles won Super Bowl",
+			date: new Date("Feb 4, 2018"),
+			text: "GOOOOOOOOOOOO BIRRRRRRDS!",
+			tags: [{text: "College"}, {text: "Philly"}]
+		},{
+			title: "JPMorgan Chase & Co",
+			date: new Date("June 4, 2018"),
+			logo: { src: "images/jp.png" },
+			short: "Worked in Houston on Data team",
+			text: "Traveled to Houston for the summer. I was not a fan of the corporate feel, cubicles, and layers of bureaucracy. Or Houston. My biggest gripe was the super slow machines we were given. But, the other interns were awesome and my team had many smart engineers.",
+			tags: [{text: "Summer"}, {text: "Work"}]
+		},{
+			title: "UTA & Peer Tutor",
+			date: new Date("Aug 30, 2018"),
+			logo: { src: "images/cathy.png" },
+			short: "Turns out, this is a great way to practice explaining code and communicating your thoughts. Which is great for interviews (and life!)",
+			text: "I've always enjoyed teaching. I decided to become a teaching assistant and tutor to make a little cash to pay for groceries. Turns out, it is a great way to practice explaining code and communicating your thoughts. Which is great for interviews (and life!)",
+			tags: [{text: "College"}, {text: "Work"}]
+		}, {
+			title: "Made this Website",
+			date: new Date("June 30, 2018"),
+			short: "Lowkey I think this got me into Google",
+			text: "Decided I needed a website. I did not feel like it and I doubted it would make any difference. But, during my Google interview, the interviewer mentioned my website and seemed impressed with it. So a good choice.",
+			tags: [{text: "College"}, {text: "Side Project"}]
+		}, {
+			title: "Google",
+			date: new Date("May 30, 2019"),
+			logo: { src: "images/google.png" },
+			short: "Working on Google Sheets in NYC!",
+			text: "Got my dream internship! I really thought I failed my interviews. Super surreal. Gonna be working on the Google Sheets team in New York!",
+			tags: [{text: "Work"}, {text: "New York"}]
+		}, {
+			title: "Stripe",
+			date: new Date("Sept 30, 2019"),
+			logo: { src: "images/stripe.png" },
+			short: "In the fall I will be in San Francisco at this awesome Unicorn",
+			text: "During my on-site at Stripe I fell in love with the place. I did not know how to pick between Google or Stripe for my summer internship. I was shocked I even had both options. Ended up asking my Stripe recruiter if I could delay it to the fall. She was chill about it and I decided to do it. Was it a good choice? Guess we will have to wait to find out.",
+			tags: [{text: "Work"}, {text: "San Francisco"}]
+		}
+		].sort(function(a, b) { return b.date.getTime() - a.date.getTime(); });
+
+		var options = {
+			short: true,
+			startRight: true
+		};
+
+		dots.forEach(appendTimelineItem);
+
+		function toggleMoreDetail() {
+			$timeline.innerHTML = "";
+			options.short = !options.short;
+			options.startRight = !options.startRight;
+			$toggleWord.textContent = $toggleWord.textContent == "less" ? "more" : "less";
+			dots.forEach(appendTimelineItem);
+		}
+
+		function appendTimelineItem(item, index) {
+			if(options.short && !item.short) return;
+			/*
+			<li class="timeline-item">
+				<div class="portfolio-card direction-r">
+					<div class="portfolio-card-body flag-wrapper">
+						<h5 class="portfolio-card-title flag">
+							<span class="flag flag-shadow">{{title}}</span>
+							<span class="date">JUL 15</span>
+						</h5>
+						<p class="card-text">{{text}}</p>
+						<div class="tags">{{tags}}</div>
+					</div>
+				</div>
+			</li>
+			*/
+			/* <li class="timeline-item"> */
+			var timelineItem = document.createElement("li");
+			timelineItem.classList.add("timeline-item");
+
+				/* <div class="portfolio-card direction-r"> */
+				var portfolioCard = document.createElement("div");
+				portfolioCard.classList.add("portfolio-card");
+				var isDirLeft = item.direction ? item.direction.toLowerCase().indexOf("l") > -1 : index%2==0;
+				if(options.startRight) isDirLeft = !isDirLeft;
+				var direction = isDirLeft ? "direction-l" : "direction-r";
+				portfolioCard.classList.add(direction);
+
+				/* <div class="portfolio-card-body flag-wrapper"> */
+				var portfolioCardBody = document.createElement("div");
+				portfolioCardBody.classList.add("portfolio-card-body");
+				portfolioCardBody.classList.add("flag-wrapper");
+
+					/* <h5 class="portfolio-card-title flag"> */
+					var portfolioCardTitle = document.createElement("h5");
+					portfolioCardTitle.classList.add("portfolio-card-title");
+					portfolioCardTitle.classList.add("flag");
+
+						/* <span class="flag flag-shadow">{{title}}</span> */
+						var flagShadowSpan = document.createElement("span");
+						flagShadowSpan.classList.add("flag");
+						flagShadowSpan.classList.add("flag-shadow");
+						flagShadowSpan.textContent = item.title;
+
+						/* <span class="date">JUL 15</span> */
+						var dateSpan = document.createElement("span");
+						dateSpan.classList.add("date")
+						dateSpan.textContent = formatDate(item.date);
+
+						portfolioCardTitle.appendChild(flagShadowSpan);
+						portfolioCardTitle.appendChild(dateSpan);
+						portfolioCardBody.appendChild(portfolioCardTitle);
+
+					/* <p class="card-text">{{text}}</p> */
+					var cardText = document.createElement("p");
+					cardText.classList.add("card-text");
+					cardText.innerHTML = options.short ? item.short : item.text;
+					portfolioCardBody.appendChild(cardText);
+
+					if(item.logo) {
+						/* <img class="work-logo" src="{{src}}"></img> */
+						var logo = document.createElement("img");
+						logo.classList.add("work-logo");
+						logo.src = item.logo.src;
+						if(item.logo.css) logo.classList.add(item.logo.css);
+						portfolioCardBody.appendChild(logo);
+						portfolioCard.classList.add("has-logo");
+					}
+
+					/* <div class="tags">{{tags}}</div> */
+					var tags = document.createElement("div");
+					// 	/* <span class="badge badge-pill badge-danger">{{tag.text}}</span> */
+					// 	item.tags.forEach(function(tag) {
+					// 		var badge = document.createElement("span");
+					// 		badge.classList.add("badge");
+					// 		badge.classList.add("badge-pill");
+					// 		badge.classList.add("badge-danger");
+					// 		badge.textContent = tag.text;
+					// 		tags.appendChild(badge);
+					// 		tags.appendChild(document.createTextNode(" "));
+					// 	});
+					// tags.classList.add("tags");
+					portfolioCardBody.appendChild(tags);
+
+				portfolioCard.appendChild(portfolioCardBody);
+			
+			timelineItem.appendChild(portfolioCard);
+
+			$timeline.appendChild(timelineItem);
+		}
+
+		function formatDate(date) {
+			var months = ["JAN", "FEB", "MARCH", "APR", "MAY", "JUNE", "JULY", "AUG", "SEPT", "OCT", "NOV", "DEC"];
+			var year = date.getYear()-100;
+			return months[date.getMonth()] + " " + date.getFullYear();
+		}
+	</script>
 </body>
 
 </html>
