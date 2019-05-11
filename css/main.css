@@ -308,6 +308,7 @@ html, body.portfolio {
 	bottom: 15px;
 	left: 15px;
 	right: 15px;
+	background: #ffffffa8;
 }
 .side-card .tags {
 	bottom: 10px;
@@ -390,6 +391,10 @@ html, body.portfolio {
 
 	body.portfolio {
 		padding: 0;
+	}
+
+	.portfolio-card.screen-pic .card-text {
+		font-size: 8pt;
 	}
 }
 
