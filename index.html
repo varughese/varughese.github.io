@@ -84,7 +84,7 @@
 			</div>
 			<div>
 				<div id="quote-line"></div>
-				<div id="quote"></div>
+				<div id="quote" quote-index="-1" onclick="changeQuote()"></div>
 			</div>
 		</div>
 	</div>
@@ -104,7 +104,17 @@
 			'"I didn\'t have time to write a short letter, so I wrote a long one instead"'
 		];
 
-		document.getElementById('quote').innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
+		function changeQuote() {
+			var randomIndex = Math.floor(Math.random() * quotes.length);
+			var $quote = document.getElementById('quote');
+			var $currentIndex = Number($quote.attributes["quote-index"].value);
+			while ($currentIndex == randomIndex)
+				randomIndex = Math.floor(Math.random() * quotes.length);
+			$quote.innerHTML = quotes[randomIndex];
+			$quote.setAttribute("quote-index", randomIndex);
+		}
+
+		changeQuote();
 	</script>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->

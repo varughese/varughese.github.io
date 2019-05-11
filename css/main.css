@@ -101,6 +101,9 @@ html, body.portfolio {
 	font-style: italic;
 	color: #757575;
 }
+#quote:hover {
+	cursor: pointer;
+}
 
 .go-home-link {
 	position: absolute;
