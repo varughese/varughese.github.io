@@ -1,5 +1,5 @@
 # Personal Website
-View here: [http://matvarughese.me](http://matvarughese.me)
+View here: [https://varughese.github.io/](https://varughese.github.io/)
 
 ## Thank you to help from:
 - [https://vestride.github.io/Shuffle/](https://vestride.github.io/Shuffle/)
