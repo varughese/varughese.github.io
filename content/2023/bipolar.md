@@ -1,5 +1,6 @@
 ---
-title: "Getting diagnosed with bipolar"
+title: "Bipolar"
+subtitle: "My story with mental illness and being diagnosed Bipolar I"
 date: 02/18/2023
 ---
 
@@ -17,7 +18,7 @@ date: 02/18/2023
 -   Jack Duffy, a close friend of mine, committed suicide on May 9th 2019. He was an inspiration, had bipolar disorder (I did not know that until a few months ago).
 -   Whenever I think about Jack, I feel the urge to cry a little bit, but I was taught not to cry and to suck up your emotions. Turns out that is not a good strategy.
 -   I have a really strong support system (between friends and family I felt like I will never be alone)
--   My job is great (stripe.com) and overall not really stressful
+-   My job is great (stripe.com) and overall not stressful
 
 ## First episode
 
@@ -75,7 +76,7 @@ date: 02/18/2023
 -   I finally got discharged but still was coming down from mania and spent 2 weeks weaning off some medications
 -   I had a painful 3 months, but compared to a lot of people this struggle was nothing.
 
-## Through this I realized:
+## Through this I realized
 
 Someone going through a mental illness episode barely understands what they need because their mind is thinking weird thoughts. This makes it hard for loved ones to give support. I think the best thing for everyone is to keep a judgement free, open mind and to provide them with patience, optimism, and compassion. Open communication is key. There is a lot of work to be done to reduce the stigma, especially in the Indian community. I reflected a lot while I was stuck in the psych ward and was losing my mind sitting in my hospital, physically alone by myself for extended periods of time. A lot of first generation Indian kids are taught to blindly listen to their parents. If you rebel, your parents will place a huge amount of guilt on you. From my experience South Indian parents typically love their kids, but do not know how to show it at all. Fatherly love feels more obligatitory than authentic, which leads to confusion later on in life. Kids are taught to be successful and to hustle, but are not encouraged to find and follow their passions. This results in a lot of individuals that know how to listen and wrok hard, but are broken in ways they do not even understand. When they go off to college (if they are lucky to do that), they hopefully get to be exposed to new perspectives and cultures to break free from this. In the case where an Indian parent has mental illness, it is ignored, and the kids live their lives witnessing the repercussions of untreated mentall illness and then risk repeating the generational curse of sadness and anxiety. Combine that with general societal norms for guys to be tough and you have a bunch of people with issues (like anxiety for example) that do not have professional therapy because it’s looked down upon. I had anxiety my whole life and thought it was just an unfixable repercussion that came from living with my dad. It also is not straightforward to get therapy. This generational curse makes me sad, because a lot of Indian parents immigrate to America to have better lives for their children, and their lives are definitely better, but they still have to carry the burden of mental illness (sometimes diagnosed, sometimes not). Most South Indians are Christians, and no shade at Christianity. The Bible is great, but I think it is easy to misinterpret it and it can lead to carrying forward a patriarchal system that enables older guys to disrespect their women (which was popularized in popular hip hop culture). All of this is getting way better, because each generation of kids are smarter. Mental illness diagnosis can exist without it being a label. For me personally, I like to think I love myself and I am secure enough in myself that I am proud to carry the bipolar label on me, and I do not care what judgements people make about me.
 
@@ -89,7 +90,7 @@ Jack's chicken scratch handwriting to me in my High School yearbook
 
 People will always come and go in your life, but the memories and lessons they teach you will hopefully stick. If you wait long enough, people will surprise you. Up until recently I thought Jack's final lesson to me was to strive to be the best at whatever I did. But now I realized he was always teaching me to try to make a positive impact in the world and to never give up faith in the people around you. My parents basically say the same shit but in a way more annoying and indirect way.
 
-Crazy people are built different. Everyone is built differently, it is the beauty of life, but not everyone thinks different to the point they are considered iconinc. I'll end my post with two quotes from two people who I think are crazy. One, a legendary baller from Philly and another who is a rapper from Chi-Town.
+Crazy people are built different. Everyone is built differently, it is the beauty of life, but not everyone thinks different to the point they are considered icons. I'll end my post with two quotes from two people who I think are crazy. One, a legendary baller from Philly and another who is a rapper (who needs to chill out) from Chi-Town.
 
 _Kobe Bryant_: "But, are you a different animal and the same beast?"
 
@@ -103,9 +104,12 @@ People that lived through traumatic experiences and mental illnesses are crazy, 
 
 I am not a doctor. Here are some resources that helped me as I was going through my diagnosis.
 
--   Movie: Dead Poets Society, Silver Linings Playbook
--   Blog posts: https://peterattiamd.com/estherperel/
--   Podcasts: https://podcastnotes.org/huberman-lab/episode-82-the-science-treatment-of-bipolar-disorder-huberman-lab/
--   Exercise: If I was a doctor, I would make this mandatory for my patients. Even if it's just walking. Yoga is a solid thing to do because it forces you to focus on your life.
--   Charlie Health: This is where I do my Intensive Outpatient Program (IOP), it is group therapy and pretty helpful
+-   **Movie**
+    -   Silver Linings Playbook (Funny)
+    -   Dead Poets Society (Artistic, Sad)
+    -   Good Will Hunting (Classic)
+-   **Blog posts**: [The effects of trauma, the role of narratives...](https://peterattiamd.com/estherperel/)
+-   **Podcasts**: [Huberman Lab, The Science Treatment of Bipolar Disorder](https://podcastnotes.org/huberman-lab/episode-82-the-science-treatment-of-bipolar-disorder-huberman-lab/)
+-   **Exercise**: If I was a doctor, I would make this mandatory for my patients. Even if it's just walking. Yoga is a solid thing to do because it forces you to focus on your life.
+-   **Charlie Health**: This is where I do my Intensive Outpatient Program (IOP), it is group therapy and pretty helpful
 -   Be careful about Googling your symptoms. A lot of the time your personal bias will harm your ability to get the right information and make you believe incorrect ideas that can harm you.

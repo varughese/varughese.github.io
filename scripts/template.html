@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&family=Open+Sans:ital,wght@0,400;0,600;1,500&display=swap" rel="stylesheet">
+    	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <meta name="description" content="{{ SUBTITLE }}" />
+    <title>{{ TITLE }}</title>
+  </head>
+  <body>
+    <div class="markdoc-content">
+      <h1>{{ TITLE }}</h1>
+      <!-- I dont like how the byline looks <h3 class="byline">{{ SUBTITLE }}</h3> -->
+      <a class="avatar" href="/">
+        <img width=40 height=40 src="https://pbs.twimg.com/profile_images/1128294178725736451/H5SlEZfb_400x400.jpg">
+        <div>
+          <span>Mathew Varughese</span>
+          <span class="avatar-date">{{ DATE }}<span>
+        </div>
+      </a>
+
+      {{ CONTENT }}
+    </div>
+    <script>
+      window.INITIAL_STATE = {}
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</htmlp>
