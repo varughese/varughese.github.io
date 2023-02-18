@@ -104,7 +104,7 @@ People that lived through traumatic experiences and mental illnesses are crazy, 
 
 I am not a doctor. Here are some resources that helped me as I was going through my diagnosis.
 
--   **Movie**
+-   **Movies**
     -   Silver Linings Playbook (Funny)
     -   Dead Poets Society (Artistic, Sad)
     -   Good Will Hunting (Classic)
