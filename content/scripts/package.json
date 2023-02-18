@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@markdoc/markdoc": "^0.2.2",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.0"
+  }
+}
