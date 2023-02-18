@@ -5,8 +5,8 @@ import * as fs from "fs/promises";
 import * as path from "path";
 import * as yaml from "js-yaml";
 
-const BLOG_POST_DIR = "../blog";
-const BLOG_POST_TEMPLATE_FILE = "./template.html";
+const BLOG_POST_DIR = path.join(__dirname, "../blog");
+const BLOG_POST_TEMPLATE_FILE = path.join(__dirname, "./template.html");
 
 async function* getFiles(dir) {
     const dirents = await fs.readdir(dir, { withFileTypes: true });
