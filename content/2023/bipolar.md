@@ -20,7 +20,7 @@ date: 02/18/2023
 -   I have a really strong support system (between friends and family I felt like I will never be alone)
 -   My job is great (stripe.com) and overall not stressful
 
-## First episode
+## Episode 1
 
 -   October 2022, I went to India to see my sick Amachi (Grandma in Malayalam) with my brothers, mom, and sister in laws
 -   I felt kind of weird as soon as I got into India. I could not sleep. And for some reason, loud noises while we were driving around would start to bother me (similar to PTSD patients)
@@ -39,7 +39,7 @@ date: 02/18/2023
 -   I removed my parents from my HIPPA list because of a fight I had with them over a shitty hospital phone
 -   Got put on Depakote (mood stablizer medication)
 
-## Second episode
+## Episode 2
 
 -   Discharged and stayed with my Dad
 -   I was still manic-ish but and my Dad and I triggered each other and drove each other insane
@@ -48,7 +48,7 @@ date: 02/18/2023
 -   I was in the hospital so I missed Thanksgiving, my favorite holiday (sadness)
 -   Discharged with Lithium and Abilify
 
-## Third episode
+## Episode 3
 
 -   Abilify gave me insomnia and tremors (technical term is Akathasia). My grandfather died of Parkinsons so I was getting really anxious by this side effect.
 -   I averaged 3 hours of sleep a night for 2 weeks
