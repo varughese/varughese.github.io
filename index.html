@@ -13,17 +13,13 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
 	    crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121861795-1"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8CMWLPDF0C"></script>
 	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-121861795-1');
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-8CMWLPDF0C');
 	</script>
 	<meta property="og:title" content="Mat Varughese Portfolio" />
 	<meta property="og:image" content="/images/nameincode.png" />
@@ -45,9 +41,10 @@
 		</div>
 		<div class="info">
 			<div class="quick-about-me">
-			    <p>Hi, I'm Mat! I'm a software engineer at <b>Stripe</b> and a proud <b>Pitt</b> alum.
-				<p>Check out my projects and feel free to contact me! You can find my resume
-					<a href="/resume.pdf">here</a>.</p>
+			    <p>👋 Hi, I'm Mat! I'm a software engineer at <b>Stripe</b> and a proud <b>Pitt</b> alum.
+				<p>You can find my (very outdated) resume
+					<a href="/resume.pdf">here</a>. Feel free to hit me up.</p>
+				<p>Check out my app, <a href="https://messagememories.app">Message Memories</a>.</p>
 			</div>
 			<div class="links">
 				<!--
@@ -57,6 +54,12 @@
 						<span>Projects</span>
 					</a>
 				</div> -->
+				<div class="link-icon">
+					<a href="https://twitter.com/varhawk5">
+						<i class="fab fa-twitter"></i>
+						<span>Twitter</span>
+					</a>
+				</div>
 				<div class="link-icon">
 					<a href="https://www.linkedin.com/in/matvarughese/">
 						<i class="fab fa-linkedin"></i>
@@ -103,7 +106,7 @@
 			'"Success isn\'t about being the best. It\'s about always getting better."',
  			// 3b1b video
 			'"Glimpses of ingeniousness are not inexplicable miracles, but rather the residue of experience"',
-			// Donald Knuth, Mentioned in my Theory of Computation) class
+			// Donald Knuth, Mentioned in my Theory of Computation class
 			'"The psychological profiling of a programmer is the ability to shift levels of abstraction, from low level to high level. To see something in the small and to see something in the large."',
 			// Read while in my CS 1550 (Operating Systems) class
 			'"All problems in computer science can be solved by another level of indirection, except for the problem of too many layers of indirection"',
@@ -132,8 +135,14 @@
 			// Micheal J Fox, saw on a middle school board in Arizona
 			'"Gratitude makes optimism sustainable"',
 			// John Wooden. Saw on Twitter, talking about Open AI moving fast
-			'"Be quick, but don\'t hurry"'
-		];
+			'"Be quick, but don\'t hurry"',
+			// @ajgray Stripe coworker, I would add context but there are constraints
+			'"Artistry comes from the constraints of the medium"',
+			// I think Alistair said this, but its just a proverb
+			'"Hunger is the best sauce"',
+			// Antoine de Saint Exupéry, heard this in high school, surprised it was not already on here
+			'"If you want to build a ship, don\'t drum up people to collect wood and don\'t assign them tasks and work, but rather teach them to long for the endless immensity of the sea."'
+			];
 
 		function changeQuote() {
 			var randomIndex = Math.floor(Math.random() * quotes.length);
